@@ -1,0 +1,5 @@
+{
+  "name": "MemoryBridge",
+  "description": "A tool to build persistent memory files for AI conversations, helping AI understand your context, style, and goals.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta -->
+    <title>MemoryBridge — Build AI Memory That Actually Works</title>
+    <meta name="description" content="Build a persistent memory file for any AI — Claude, ChatGPT, Grok, Gemini. Stop starting from scratch every conversation." />
+
+    <!-- PWA -->
+    <link rel="manifest" href="/assets/manifest-ByWOpwEa.json" />
+    <meta name="theme-color" content="#00bcd4" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="MemoryBridge" />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+
+    <!-- Open Graph (for sharing links on social) -->
+    <meta property="og:title" content="MemoryBridge — Build AI Memory That Actually Works" />
+    <meta property="og:description" content="Stop re-introducing yourself to AI every conversation. Build a memory file once, use it everywhere. Free. Works with any AI." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://memorybridge.chronoaisolutions.com" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MemoryBridge — Build AI Memory That Actually Works" />
+    <meta name="twitter:description" content="Stop re-introducing yourself to AI every conversation. Free tool. Works with Claude, ChatGPT, Grok, Gemini." />
+    <script type="module" crossorigin src="/assets/index-CRiYM9yE.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-RD2OnWLt.css">
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- Register Service Worker -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(() => console.log('MemoryBridge SW registered'))
+            .catch((err) => console.log('SW registration failed:', err));
+        });
+      }
+    </script>
+  </body>
+</html>
